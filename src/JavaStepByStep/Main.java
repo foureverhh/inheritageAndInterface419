@@ -3,7 +3,7 @@ package JavaStepByStep;
 public class Main {
 
     public static void main(String[] args) {
-	    House house = new House(20,10,3);
+	    House house = new ManyFamilyHouse(20,10,3);
 	    LivingHouse livingHouse = new LivingHouse();
 	    //house.length = 20;
 	    //livingHouse.length = 25;
@@ -29,7 +29,7 @@ public class Main {
 
 		//Object collection
 		House[] houses = new House[100];
-		houses[0] = new House(40,25,4);
+		//houses[0] = new House(40,25,4);
 		houses[1] = new LivingHouse(40,25,4,true);
 		houses[2] = new ManyFamilyHouse(40,25,4,true,10);
 
@@ -37,6 +37,12 @@ public class Main {
 			if(houses[i]!= null)
 				System.out.println("A "+houses[i].getClass().getName()+" with area "+houses[i].area());
 		}
-
+		//test interface
+		Point p1 = new Point(1,1);
+		Point p2 = new Point(new Point(2,3));
+		p1.printable();
+		p2.printable();
+		p1.drawable();
+		p2.drawable();
     }
 }

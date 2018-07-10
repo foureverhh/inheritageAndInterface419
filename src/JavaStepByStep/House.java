@@ -1,6 +1,6 @@
 package JavaStepByStep;
 
-public class House {
+public abstract class House {
     private double length;
     private double width;
     private int floors;
