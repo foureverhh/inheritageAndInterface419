@@ -3,7 +3,8 @@ package JavaStepByStep;
 public class Main {
 
     public static void main(String[] args) {
-	    House house = new ManyFamilyHouse(20,10,3);
+	   /*
+	   House house = new ManyFamilyHouse(20,10,3);
 	    LivingHouse livingHouse = new LivingHouse();
 	    //house.length = 20;
 	    //livingHouse.length = 25;
@@ -44,5 +45,8 @@ public class Main {
 		p2.printable();
 		p1.drawable();
 		p2.drawable();
+		*/
+	   //compare object - method compareTo
+
     }
 }
